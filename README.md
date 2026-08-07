@@ -46,31 +46,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sphinx_parser` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install sphinx_parser
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install sphinx_parser
 ```
 
-It is possible to list all of the versions of `sphinx_parser` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add sphinx_parser
+# for installing globally
+pixi global install sphinx_parser
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `sphinx_parser` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search sphinx_parser --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search sphinx_parser --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search sphinx_parser --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -82,6 +124,8 @@ mamba repoquery whoneeds sphinx_parser --channel conda-forge
 # List dependencies of `sphinx_parser`:
 mamba repoquery depends sphinx_parser --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -152,7 +196,4 @@ Feedstock Maintainers
 
 * [@jan-janssen](https://github.com/jan-janssen/)
 * [@samwaseda](https://github.com/samwaseda/)
-
-
-<!-- dummy commit to enable rerendering -->
 

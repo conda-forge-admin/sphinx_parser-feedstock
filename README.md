@@ -195,5 +195,6 @@ Feedstock Maintainers
 =====================
 
 * [@jan-janssen](https://github.com/jan-janssen/)
+* [@niklassiemer](https://github.com/niklassiemer/)
 * [@samwaseda](https://github.com/samwaseda/)
 

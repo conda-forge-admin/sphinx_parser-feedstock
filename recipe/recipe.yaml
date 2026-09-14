@@ -2,18 +2,18 @@ schema_version: 1
 
 context:
   name: sphinx_parser
-  version: "0.1.10"
+  version: "0.1.11"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: c191f648635b9d021de0877ab376818caa84725b3bb5c1ee5115442e65fdb4a7
+  url: https://files.pythonhosted.org/packages/d7/b3/8ad3f5d0f02f5e1d1e742926ca5cf65f21aba994c019efcd3d0a27e300df/sphinx_parser-${{ version }}.tar.gz
+  sha256: 31f0f6b40f4b20eb49c2a57939d3bb69577d1302c81d6f36198998be6ae7a4a8
 
 build:
-  number: 5
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -37,7 +37,7 @@ tests:
       imports:
         - sphinx_parser
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
         - "*"
 
